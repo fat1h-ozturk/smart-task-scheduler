@@ -1,0 +1,17 @@
+{
+  "model_type": "RidgePolynomialRegressor",
+  "train_samples": 72,
+  "test_samples": 24,
+  "weights": [
+    0.009686,
+    0.08096,
+    0.056207,
+    0.090542,
+    -0.005403,
+    0.083289
+  ],
+  "metrics": {
+    "mae_seconds": 0.0252,
+    "rmse_seconds": 0.0431
+  }
+}

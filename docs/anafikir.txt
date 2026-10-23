@@ -1,0 +1,23 @@
+Elinizde yapılacak 100 iş ve bu işleri yapabilecek 3 bilgisayar var. Bir program yazıp bu işleri bilgisayarlara paylaştıracaksınız.
+
+Örneğin işler, fotoğrafları küçültmek olsun. Bazı fotoğraflar küçük, bazıları büyük. Bilgisayarların da biri hızlı, biri orta, biri yavaş.
+
+Projenin temel sorusu şu: Hangi işi hangi bilgisayara verirsek bütün işler daha erken biter?
+
+Üç farklı yöntem deneyeceksiniz:
+1. Sırayla dağıtma: Birinci işi A’ya, ikinciyi B’ye, üçüncüyü C’ye ver.
+2. Kuyruğu kısa olana verme: Kimin bekleyen işi azsa ona ver.
+3. Yapay zekâyla tahmin etme: “Bu büyük fotoğraf A’da 2 saniye, B’de 5 saniye sürer. Ama A şu anda dolu. Hangisine verirsem daha erken biter?” diye hesapla.
+Buradaki yapay zekâ bir sohbet botu değil. Önceden tamamlanan işlerden öğrenip yeni bir işin ne kadar süreceğini tahmin eden küçük bir model.
+
+Sistemde bir de koordinatör, yani işleri dağıtan yönetici program olacak. Diğer programlara worker, yani işi yapan çalışan diyeceksiniz.
+
+Bir worker işin ortasında kapanırsa koordinatör bunu fark edip yarım kalan işi başka worker’a verecek.
+
+Sunumda göstereceğiniz şey de şu olacak:
+- Aynı işleri üç yöntemle çalıştıracaksınız.
+- Hangisinin bütün işleri daha erken bitirdiğini ölçeceksiniz.
+- Bir worker’ı kapatıp sistemin işi başka worker’da tamamladığını göstereceksiniz.
+Başlangıçta bunların hepsi tek bilgisayarda ayrı programlar olarak çalışabilir. Üç bilgisayarınızın olması şart değil.
+
+Yani yapacağınız proje: İşleri birkaç çalışana paylaştıran, sürelerini tahmin ederek uygun çalışanı seçmeye çalışan ve çalışanlardan biri kapanınca işi başkasına devreden bir sistem.

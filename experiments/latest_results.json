@@ -1,0 +1,52 @@
+{
+  "model_metrics": {
+    "mae_seconds": 0.0252,
+    "rmse_seconds": 0.0431
+  },
+  "scheduler_comparison": [
+    {
+      "scheduler": "round_robin",
+      "makespan_sec": 7.308,
+      "avg_wait_sec": 1.171,
+      "p95_wait_sec": 5.32,
+      "runtime_mae_sec": null,
+      "worker_distribution": {
+        "worker-A": 4,
+        "worker-B": 4,
+        "worker-C": 4
+      }
+    },
+    {
+      "scheduler": "shortest_queue",
+      "makespan_sec": 5.827,
+      "avg_wait_sec": 0.786,
+      "p95_wait_sec": 3.77,
+      "runtime_mae_sec": null,
+      "worker_distribution": {
+        "worker-A": 5,
+        "worker-B": 4,
+        "worker-C": 3
+      }
+    },
+    {
+      "scheduler": "ml_predictor",
+      "makespan_sec": 2.547,
+      "avg_wait_sec": 0.598,
+      "p95_wait_sec": 1.474,
+      "runtime_mae_sec": 0.0262,
+      "worker_distribution": {
+        "worker-A": 6,
+        "worker-B": 4,
+        "worker-C": 2
+      }
+    }
+  ],
+  "fault_tolerance_experiment": {
+    "total_tasks": 6,
+    "succeeded_tasks": 6,
+    "killed_worker": "worker-B",
+    "reassigned_task_count": 2,
+    "recovery_time_sec": 0.913,
+    "stale_result_rejected": true
+  }
+}
